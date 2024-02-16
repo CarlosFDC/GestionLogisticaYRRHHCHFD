@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('email')->unique(); //este es unique, basicamente que es unico, no se puede repetir
             $table->timestamp('email_verified_at')->nullable(); //este es un timestamp, la propiedad nullable es para decir que este campo puede estar vacío
             $table->string('password');//string de columna llamada password
-            $table->string('avatar');
+            $table->string('avatar');//columna creada para probar migration:fresh
             $table->rememberToken();//cada vez que el usuario marque la opcion de "mantener la sesion iniciada" se puede crear esta columna, es un varchar de 
             //100 de largo, que se encarga de crear un token de inicio de sesion
             $table->timestamps();//este comando crea 2 columnas llamadas "created_at" y "updated_at", los cuales se utilizan para migraciones
